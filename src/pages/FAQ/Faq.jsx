@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import "./FAQ.css";
+import "./Faq.css";
 import Banner from "../../components/Banner/Banner";
 import LatestNews from "../../components/Navbar/LatestNews/LatestNews";
 
