@@ -17,8 +17,9 @@ import {
 import phoneImage from "../../assets/book.png";
 import womanImage from "../../assets/women.png";
 import { Link } from 'react-router-dom';
-import Testimonial from '../../components/Testimonial/Testimonial.Jsx';
+
 import LatestNews from '../../components/Navbar/LatestNews/LatestNews';
+import Testimonial from '../../components/Testimonial/Testimonial';
 
 
 
