@@ -1,0 +1,157 @@
+
+.appointment-section {
+  padding: 70px 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+}
+
+.appointment-wrapper {
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  padding: 18px;
+  
+}
+
+.appointment-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #5b5ce2;
+  border-radius: 36px;
+  transform: translate(-8px, -8px);
+  z-index: 0;
+}
+
+.appointment-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+  padding: 35px 20px;
+  border-radius: 34px;
+ box-shadow: 0 15px 60px rgba(38, 42, 110, 0.15);
+}
+
+.appointment-card h2 {
+  text-align: center;
+  color: #252b80;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 26px;
+}
+
+.appointment-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.appointment-card input,
+.appointment-card select {
+  width: 100%;
+  height: 53px;
+  padding: 0 18px;
+  border: 1px solid #d0d0fa;
+  border-radius: 7px;
+  background-color: #fff;
+  color: #333;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appointment-card input:focus,
+.appointment-card select:focus {
+  border-color: #5959d8;
+  box-shadow: 0 0 0 3px rgba(89, 89, 216, 0.1);
+}
+
+.appointment-card input::placeholder {
+  color: #555;
+}
+
+.appointment-card select {
+  cursor: pointer;
+}
+
+.appointment-card button {
+  align-self: center;
+  min-width: 198px;
+  min-height: 53px;
+  margin-top: 13px;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 7px;
+  background-color: #f47732;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.appointment-card button:hover {
+  background-color: #e96523;
+  transform: translateY(-2px);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .appointment-section {
+    padding: 55px 20px;
+  }
+
+  .appointment-wrapper {
+    max-width: 430px;
+  }
+
+  .appointment-card {
+    padding: 30px 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .appointment-section {
+    padding: 40px 20px;
+  }
+
+  .appointment-wrapper {
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .appointment-wrapper::before {
+    border-radius: 28px;
+    transform: translate(-5px, -5px);
+  }
+
+  .appointment-card {
+    padding: 28px 18px;
+    border-radius: 27px;
+  }
+
+  .appointment-card h2 {
+    font-size: 23px;
+  }
+
+  .appointment-card form {
+    gap: 14px;
+  }
+
+  .appointment-card input,
+  .appointment-card select {
+    height: 49px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,51 @@
+.cards {
+  background-color: #eeeefa;
+  padding: 60px;
+}
+.cards .card {
+  padding: 15px 30px;
+  border-radius: 12px;
+  transition: 0.4s all;
+  margin-bottom: 10px;
+}
+.cards .card:hover {
+  background-color: #565acf;
+}
+.cards .card:hover h4,
+.cards .card:hover h5,
+.cards .card:hover p {
+  color: white;
+}
+.cards .card h5 {
+  color: var(--orange-color);
+  font-size: 50px;
+  font-weight: bold;
+}
+.cards .card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+.cards .card p {
+  font-size: 16px;
+  color: #333;
+  /* max-width: 200px; */
+}
+
+@media (max-width: 575.98px) {
+  .cards {
+    padding: 30px 0;
+  }
+  .cards .card {
+    min-height: 220px;
+  }
+  .cards .card h5 {
+    font-size: 40px;
+  }
+  .cards .card h4 {
+    font-size: 18px;
+  }
+  .cards .card p {
+    font-size: 15px;
+  }
+}

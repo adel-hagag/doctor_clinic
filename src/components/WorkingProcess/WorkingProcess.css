@@ -1,0 +1,233 @@
+
+.working-process {
+  position: relative;
+  padding: 70px 0 90px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.working-heading {
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+.working-heading h5 {
+  display: inline-block;
+  color: #f47732;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  padding: 0 15px;
+  background: repeating-linear-gradient(
+    120deg,
+    transparent,
+    transparent 5px,
+    #fff0e8 5px,
+    #fff0e8 8px
+  );
+}
+
+.working-heading h2 {
+  color: #202675;
+  font-size: 48px;
+  font-weight: 750;
+  margin: 0;
+}
+
+/* Cards */
+.process-card {
+  position: relative;
+  height: 385px;
+  padding: 45px 32px 30px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 5px 50px rgba(32, 38, 117, 0.08);
+  transition: 0.3s ease;
+  z-index: 1;
+  transition: 0.4s all;
+}
+
+.process-card:hover {
+  transform: translateY(-8px);
+   background-color: #f47732 !important;
+}
+
+.process-card:hover h3,
+.process-card:hover h4 ,
+.process-card:hover p{
+    color: #fff;
+}
+
+.process-card:hover .process-button{
+    background-color: #fff;
+    color: #f47732;
+}
+.process-card.active {
+  background: #f47732;
+  color: #fff;
+  transform: translateY(-33px);
+}
+
+.process-number {
+  color: transparent;
+  -webkit-text-stroke: 2px #f47732;
+  font-size: 82px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 30px;
+  text-shadow: 5px 7px 0 #ffe0d0;
+}
+
+.process-card.active .process-number {
+  -webkit-text-stroke: 2px #fff;
+  text-shadow: 5px 7px 0 rgba(255, 255, 255, 0.2);
+}
+
+.process-card h4 {
+  color: #f47732;
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.process-card.active h4 {
+  color: #fff;
+}
+
+.process-card p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.process-card.active p {
+  color: #fff;
+}
+
+/* Button */
+.process-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-width: 188px;
+  height: 55px;
+  padding: 5px 6px 5px 25px;
+  border: none;
+  border-radius: 10px;
+  background: #e5e5fa;
+  color: #5956d6;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.process-button .button-arrow {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: #fff;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.process-card.active .process-button {
+  background: #fff;
+  color: #f47732;
+}
+
+.process-card.active .button-arrow {
+  background: #f47732;
+  color: #fff;
+}
+
+.process-button:hover {
+  opacity: 0.85;
+}
+
+/* Decorations */
+.process-plus {
+  position: absolute;
+  right: 5%;
+  top: 55%;
+  color: transparent;
+  -webkit-text-stroke: 2px #f47732;
+  font-size: 100px;
+  font-weight: 300;
+  text-shadow: 5px 7px 0 #ffe0d0;
+}
+
+.process-circle {
+  position: absolute;
+  left: 5%;
+  bottom: -25px;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f47732;
+  border-radius: 50%;
+  box-shadow: 7px 7px 0 #ffe0d0;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .working-process {
+    padding: 60px 0;
+  }
+
+  .working-heading {
+    margin-bottom: 50px;
+  }
+
+  .working-heading h2 {
+    font-size: 40px;
+  }
+
+  .process-card {
+    height: auto;
+    min-height: 360px;
+    margin-bottom: 25px;
+    padding: 35px 22px;
+  }
+
+  .process-card.active {
+    transform: none;
+  }
+
+  .process-number {
+    font-size: 70px;
+  }
+
+  .process-card h4 {
+    font-size: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+  .working-heading h2 {
+    font-size: 32px;
+  }
+
+  .working-heading h5 {
+    font-size: 18px;
+  }
+
+  .process-card {
+    min-height: auto;
+    padding: 30px 25px;
+  }
+
+  .process-number {
+    font-size: 65px;
+    margin-bottom: 22px;
+  }
+
+  .process-plus {
+    right: 2%;
+    font-size: 65px;
+  }
+}

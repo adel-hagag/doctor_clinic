@@ -1,0 +1,337 @@
+
+.testimonials-section {
+  position: relative;
+  padding: 65px 0 85px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.testimonial-heading {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.testimonial-heading span {
+  display: inline-block;
+  color: #f47732;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 0 12px;
+  margin-bottom: 18px;
+  background: repeating-linear-gradient(
+    120deg,
+    transparent,
+    transparent 4px,
+    #fff0e8 4px,
+    #fff0e8 7px
+  );
+}
+
+.testimonial-heading h2 {
+  color: #202675;
+  font-size: 36px;
+  line-height: 1.25;
+  font-weight: 750;
+  margin: 0;
+}
+
+.testimonial-row {
+  row-gap: 45px;
+}
+
+/* Doctors orbit */
+.testimonial-doctors {
+  position: relative;
+  width: 360px;
+  height: 340px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctor-orbit {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 2px solid #ffe4d6;
+  border-radius: 35%;
+}
+
+.orbit-one {
+  transform: rotate(30deg);
+}
+
+.orbit-two {
+  width: 210px;
+  height: 210px;
+  transform: rotate(-30deg);
+}
+
+.doctor-center {
+  width: 130px;
+  height: 130px;
+  background: #ffe4d6;
+  border-radius: 35% 25% 40% 30%;
+  transform: rotate(15deg);
+  animation: centerFloat 3s ease-in-out infinite alternate;
+}
+
+.doctor-avatar {
+  position: absolute;
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+  padding: 3px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 5px 25px rgba(32, 38, 117, 0.12);
+  animation: avatarFloat 3s ease-in-out infinite alternate;
+}
+
+.doctor-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.doctor-avatar-1 {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.doctor-avatar-2 {
+  top: 75px;
+  right: 15px;
+  animation-delay: 0.3s;
+}
+
+.doctor-avatar-3 {
+  bottom: 75px;
+  right: 20px;
+  animation-delay: 0.6s;
+}
+
+.doctor-avatar-4 {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: 0.9s;
+}
+
+.doctor-avatar-5 {
+  bottom: 75px;
+  left: 15px;
+  animation-delay: 1.2s;
+}
+
+.doctor-avatar-6 {
+  top: 75px;
+  left: 10px;
+  animation-delay: 1.5s;
+}
+
+/* Orange testimonial card */
+.testimonial-content {
+  position: relative;
+  min-height: 265px;
+  padding: 38px 36px 35px;
+  border-radius: 28px 0 28px 28px;
+  background: #f47732;
+  color: #fff;
+  box-shadow: 0 12px 35px rgba(244, 119, 50, 0.12);
+}
+
+.testimonial-content p {
+  position: relative;
+  z-index: 1;
+  font-size: 17px;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-content h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+.testimonial-role {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.quote-open {
+  position: absolute;
+  top: -25px;
+  left: 35px;
+  width: 58px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: #fff;
+  color: #f47732;
+  font-family: Georgia, serif;
+  font-size: 75px;
+  font-weight: bold;
+  line-height: 1;
+  padding-top: 15px;
+}
+
+.quote-close {
+  position: absolute;
+  right: 25px;
+  bottom: -8px;
+  color: rgba(255, 255, 255, 0.35);
+  font-family: Georgia, serif;
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* Controls */
+.testimonial-controls {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.testimonial-controls button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: #ffe4d6;
+  color: #f47732;
+  font-size: 23px;
+  transition: 0.3s ease;
+}
+
+.testimonial-controls button:hover {
+  background: #f47732;
+  color: #fff;
+}
+
+/* Decorative shapes */
+.testimonial-plus {
+  position: absolute;
+  top: 15%;
+  left: 8%;
+  color: transparent;
+  -webkit-text-stroke: 2px #f47732;
+  font-size: 65px;
+  text-shadow: 4px 5px 0 #ffe4d6;
+}
+
+.testimonial-circle {
+  position: absolute;
+  top: 13%;
+  right: 5%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #8583ff;
+  border-radius: 50%;
+  background-image: radial-gradient(#8583ff 1px, transparent 1px);
+  background-size: 7px 7px;
+}
+
+.testimonial-square {
+  position: absolute;
+  bottom: 15%;
+  left: 8%;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #8583ff;
+  transform: rotate(-25deg);
+  box-shadow: 4px 4px 0 #e7e6ff;
+}
+
+.testimonial-dots {
+  position: absolute;
+  right: 8%;
+  bottom: 22%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #ffe4d6;
+}
+
+.testimonial-dots::after {
+  content: "";
+  position: absolute;
+  right: -3px;
+  bottom: -3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f47732;
+}
+
+@keyframes avatarFloat {
+  from {
+    margin-top: 0;
+  }
+
+  to {
+    margin-top: -7px;
+  }
+}
+
+@keyframes centerFloat {
+  from {
+    transform: rotate(15deg) scale(1);
+  }
+
+  to {
+    transform: rotate(22deg) scale(1.04);
+  }
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .testimonials-section {
+    padding: 50px 0 65px;
+  }
+
+  .testimonial-heading {
+    margin-bottom: 45px;
+  }
+
+  .testimonial-heading h2 {
+    font-size: 28px;
+  }
+
+  .testimonial-doctors {
+    width: 320px;
+    height: 300px;
+    transform: scale(0.9);
+  }
+
+  .testimonial-content {
+    padding: 35px 25px 30px;
+  }
+
+  .testimonial-plus {
+    left: 2%;
+    font-size: 45px;
+  }
+
+  .testimonial-circle {
+    right: 3%;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .doctor-center,
+  .doctor-avatar {
+    animation: none;
+  }
+}

@@ -1,0 +1,127 @@
+
+.login-page {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #f5f5fc;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 415px;
+  padding: 40px 35px;
+  background-color: #fff;
+  border-radius: 35px;
+  box-shadow: 0 15px 60px rgba(38, 42, 110, 0.12);
+  text-align: center;
+}
+
+.login-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  color: #252b80;
+  font-size: 29px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.login-card input {
+  width: 100%;
+  height: 53px;
+  padding: 0 22px;
+  border: 1px solid #d0d0fa;
+  border-radius: 7px;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.login-card input:focus {
+  border-color: #5959d8;
+  box-shadow: 0 0 0 3px rgba(89, 89, 216, 0.08);
+}
+
+.login-submit,
+.register-button {
+  width: 100%;
+  height: 53px;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-submit {
+  margin-top: 0;
+  background-color: #5959d0;
+}
+
+.login-submit:hover {
+  background-color: #4447b7;
+}
+
+.forgot-password {
+  display: inline-block;
+  margin-top: 27px;
+  color: #5959d8;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.register-text {
+  margin: 40px 0 17px;
+  color: #333;
+  font-size: 14px;
+}
+
+.register-button {
+  background-color: #f47732;
+}
+
+.register-button:hover {
+  background-color: #e76524;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-page {
+    min-height: 70vh;
+    padding: 35px 16px;
+  }
+
+  .login-card {
+    padding: 32px 22px;
+    border-radius: 27px;
+  }
+
+  .login-logo {
+    font-size: 26px;
+  }
+
+  .register-text {
+    margin-top: 30px;
+  }
+}
